@@ -115,7 +115,7 @@ router.use(function(err, req, res, next) {
 
 
 
-var server = app.listen(process.env.PORT || 8080, function () {
+var server = app.listen(process.env.PORT || 5000, function () {
   var port = server.address().port;
   console.log("RWS API Server now running on port", port);
 })

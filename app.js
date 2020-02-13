@@ -7,7 +7,7 @@ import _ from 'lodash'
 var app = express();
 var router = express.Router()
 
-// app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, '../../client/build')));
 
 const root = process.env.NODE_ENV === "production" ? __dirname + '/../' : __dirname
 

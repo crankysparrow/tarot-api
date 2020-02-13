@@ -15,6 +15,8 @@ var path = require('path');
 var app = express();
 var router = express.Router();
 
+// app.use(express.static(path.join(__dirname, '../client/build')));
+
 var root = process.env.NODE_ENV === "production" ? __dirname + '/../' : __dirname;
 
 // TODO python: images, format meanings, assign id, nicer homepage

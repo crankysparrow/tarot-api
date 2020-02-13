@@ -4,10 +4,10 @@
   "description": "Simple REST API for the tarot cards of the Rider-Waite-Smith deck.",
   "main": "app.js",
   "scripts": {
-    "start-dev": "nodemon --exec babel-node --presets=env app.js",
+    "start-dev": "nodemon --exec babel-node --presets=env appdev.js",
     "validate": "babel-node --presets=env data_validate.js",
-    "start": "node dist/app.js",
-    "build": "babel app.js -d dist",
+    "start": "node app.js",
+    "build": "babel appdev.js --out-file app.js",
     "babel-version": "babel --version"
   },
   "author": "ekelen",

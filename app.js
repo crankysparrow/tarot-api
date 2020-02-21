@@ -32,7 +32,6 @@ app.get('/documentation.yaml', function (req, res) {
 app.use('/api/v1', router);
 
 router.use(function (req, res, next) {
-  console.log(req);
   var cardData = root + '/data/card_data_v2.json';
   res.locals.rawData = JSON.parse(fs.readFileSync(cardData, 'utf8'));
   return next();
